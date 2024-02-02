@@ -4,6 +4,7 @@ import "./Services.css";
 import { NavHashLink } from "react-router-hash-link";
 import servicesapi from "./servicesapi";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { GoArrowUpRight } from "react-icons/go";
 
 const Services = () => {
   const [approch, setApproch] = useState(false);
@@ -18,17 +19,24 @@ const Services = () => {
     });
   };
 
-  const sendId = (id) => {
-    localStorage.setItem("id", JSON.stringify(Math.floor(id)));
-  };
   return (
     <>
       <div>
         <div className="container service-section" data-aos="fade-up">
           <div className="sectionHead row">
-            <h1 data-aos="flip-left">Our Services</h1>
+            <h2 data-aos="flip-left" style={{ textTransform: "uppercase" }}>
+              Our Services
+            </h2>
             <p>
-             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis non nostrum modi veniam veritatis ratione facere dolor, iure vitae amet! Maxime qui enim ullam accusamus ut, accusantium dolor corrupti quidem sit amet explicabo maiores numquam quisquam suscipit quam cum quibusdam assumenda quaerat aut dolores corporis voluptas. Sunt numquam officiis eligendi.
+
+              Our services offer your organization cost optimization, access to
+              a global talent pool, and diverse perspectives on business issues.
+              Our services involves collaboration across borders, leveraging
+              technology to facilitate communication and project management.
+              Take advantage of business process improvement and restructuring,
+              market research, or digital transformation. Our management
+              consultancy contribute significantly to a company's growth and
+              success in the global marketplace.
             </p>
           </div>
 
@@ -57,18 +65,11 @@ const Services = () => {
                         const { id, innerhead, link } = i;
                         return (
                           <>
-                            {/* append && */}
                             {
-                              <p
-                                onClick={() => {
-                                  sendId(id);
-                                }}
-                              >
+                              <p>
                                 <span className="linkSpan">
-                                  <MdKeyboardArrowRight />
                                   <NavHashLink
                                     to={link}
-                                    // onClick={()=>sendId(id)}
                                     scroll={(el) => {
                                       const yOffset = -500;
                                       const y =
@@ -82,6 +83,8 @@ const Services = () => {
                                     }}
                                   >
                                     <p>{innerhead}</p>
+
+                                    <GoArrowUpRight />
                                   </NavHashLink>
                                 </span>
                               </p>

@@ -120,6 +120,11 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          <div className="small-link">
+          <Link to = "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwihh6uM8IqEAxVL2DgGHf1KCxgQFnoECBkQAQ&url=https%3A%2F%2Fwww2.deloitte.com%2Fus%2Fen%2Finsights%2Fdeloitte-review%2Fissue-21%2Fworkplace-culture-and-alternative-workforce.html&usg=AOvVaw11Iy6kqJXDJQgpYQ9FChbd&opi=89978449" target="_blank">*Deloitte</Link>
+          <Link to="https://www.mckinsey.com/~/media/mckinsey/business%20functions/people%20and%20organizational%20performance/our%20insights/the%20state%20of%20organizations%202023/the-state-of-organizations-2023.pdf" target="_blank">*McKinsey</Link>
+          <Link to = "https://content-static.upwork.com/blog/uploads/sites/3/2019/10/09173644/futureworkforce2019-upwork-youngergen-190301085641.pdf" target="_blank">*Upwork</Link>
+          </div>
           <p
             style={{
               fontSize: "10px",

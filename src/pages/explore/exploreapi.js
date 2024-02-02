@@ -144,7 +144,7 @@ const exploreapi = [
         ],
       },
     ],
-    link:"/services#Entity"
+    link:"Entity"
   },
   {
     id: 2,
@@ -212,7 +212,7 @@ const exploreapi = [
         ],
       },
     ],
-    link:"/services#Administration"
+    link:"Administration"
   },
 
   {
@@ -303,7 +303,7 @@ const exploreapi = [
         ],
       },
     ],
-    link:"/services#Accounting"
+    link:"Accounting"
   },
 
   {
@@ -408,7 +408,7 @@ const exploreapi = [
         ],
       },
     ],
-    link:"/services#Shared"
+    link:"Shared"
   },
 
   {
@@ -499,7 +499,7 @@ const exploreapi = [
         ],
       },
     ],
-    link:"/services#Payroll"
+    link:"Payroll"
   },
 
   {
@@ -679,7 +679,7 @@ const exploreapi = [
         ],
       },
     ],
-    link:"/services#Technical"
+    link:"Technical"
   },
 ];
 

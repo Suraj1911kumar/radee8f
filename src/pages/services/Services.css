@@ -120,14 +120,16 @@
 }
 
 
-.linkSpan {
+.linkSpan a{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    /* flex-direction: row; */
+    gap: 1rem;
+    justify-content: start;
     margin: 0.5rem;
 }
 
-.linkSpan p:hover {
+.linkSpan a:hover {
     color: var(--green) !important;
 }
 

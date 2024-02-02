@@ -17,7 +17,6 @@ const ChangeWidth2 = () => {
     const changeWidth = () => {
       var scroll = window.scrollY / 5;
       var width = Math.floor(Math.min(370 - scroll));
-      console.log(width);
       element.style.width = width + "%";
     };
     if (element.style.width == "61%") {

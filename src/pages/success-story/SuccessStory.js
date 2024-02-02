@@ -7,8 +7,6 @@ import cysiv from "../../assets/images/cysiv.jpg.webp";
 import krista from "../../assets/images/Krista-logo-transparent-312-128-2_b63870c5-8e05-4078-b7db-986a926de2ab.png";
 import symantec from "../../assets/images/symantec.jpg.webp";
 import forescout from "../../assets/images/forescout.png";
-// import CaretRight from "../../assets/images/next.png";
-// import CaretTop from "../../assets/images/topup.png";
 // slider
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
@@ -51,17 +49,13 @@ const SuccessStory = () => {
       setChange(false);
     }
   };
-
-  // function toggle() {
-  //   setToggle(!togle);
-  // }
   const pagination = {
     clickable: true,
   };
   return (
     <div className="success-story">
       <div className="SuccessStoryheader">
-        <h2>Success Stories</h2>
+        <h2  style={{textTransform:"uppercase"}}>Success Stories</h2>
         <p>
           RADEE8 prides itself on being one of the most client-centric
           companies. Over the years, we have helped a lot of businesses achieve

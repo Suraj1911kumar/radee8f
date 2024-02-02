@@ -39,7 +39,17 @@
     width: 100%;
     padding: 25px;
 }
-
+.exploreheadingmain{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+.maintext{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--green);
+}
 .container .exploreHeading {
     background: url('/src/assets/images/glass.png') no-repeat;
     background-position: center;
@@ -76,7 +86,7 @@
     letter-spacing: 0.1rem;
     list-style: circle;
     font-weight: 600;
-    color: var(--dark-purple);
+    color: var(--white);
 }
 
 .exploreHeadingInner ul li b {
@@ -93,6 +103,7 @@
 
 .side {
     transition: 0.5s;
+    font-size: 2rem;
 }
 
 .side>svg {
