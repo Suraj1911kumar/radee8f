@@ -167,7 +167,7 @@ const SuccessStory = () => {
                 Goods and Services Tax (GST) filings became a hassle-free task
                 under RADEE8's guidance, as the advisory firm handled the
                 complexities of India's taxation framework.
-              </p><br/>
+              </p><br />
               <p>
                 Forescout seamlessly blended into the local business ecosystem,
                 meeting the regulatory standards and boasting a formidable team.
