@@ -9,6 +9,7 @@ import RouteError from './components/route-error/RouteError.js';
 import App from './App.js';
 import Loader from './components/Loader/Loader.js';
 import UnderMaintainance from './pages/UnderMaintainance/UnderMaintainance.js';
+import Scrolling from './components/Scrollevent/Scrolling.js';
 // Dynamic Loading | Code Spliting
 const Home = lazy(() => import('./pages/home/Home.js'));
 const About = lazy(() => import('./pages/about/About.js'));
@@ -88,6 +89,15 @@ const appRoutes = createBrowserRouter([
         element: (
           <Suspense fallback={<Loader/>}>
             <Services1 />
+          </Suspense>
+        ),
+        errorElement: <RouteError />,
+      },
+      {
+        path: '/scroll',
+        element: (
+          <Suspense fallback={<Loader/>}>
+            <Scrolling />
           </Suspense>
         ),
         errorElement: <RouteError />,
