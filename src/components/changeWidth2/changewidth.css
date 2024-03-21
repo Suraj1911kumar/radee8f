@@ -1,0 +1,58 @@
+.changeWidth {
+    min-height: 10vh;
+    position: relative !important;
+    overflow: hidden;
+}
+.containerwidth{
+    position: relative;
+    max-width: 144rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+
+}
+.expand {
+    all: unset;
+    position: sticky !important;
+    max-width: 100%;
+    min-width: 58%;
+    will-change: width;
+    margin: 5rem 0;
+    z-index: 1;
+}
+
+.expand>img {
+    position: sticky;
+    top: 0;
+}
+
+.expandtext2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 50rem;
+}
+
+@media screen and (max-width:767px) {    
+    .expand {
+        width: 100% !important;
+        margin:2rem 0 0 0;
+    }
+
+    .containerFull {
+        padding: 0 2.5rem;
+    }
+
+    .expandtext2 {
+        position: static;
+        padding: 2rem 3rem;
+    }
+}
+
+@media screen and (max-width:567px) {
+    .changeWidth {
+        min-height: 0;
+    }
+}

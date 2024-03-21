@@ -1,0 +1,209 @@
+.success-story {
+    /* min-height: 100vh; */
+    max-width: 100%;
+    margin: 2.5rem;
+    padding: 2.5rem;
+}
+
+.success-story .SuccessStoryheader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3.5rem;
+    background: url("../../assets/images/ellipse.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.success-story .SuccessStoryheader h2 {
+    text-transform: uppercase;
+}
+
+.success-story .SuccessStoryheader p {
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.success-story .successStoryBody {
+    /* border: 1px solid red; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 2.5rem;
+}
+
+.success-story .successStoryBody .successStoryContent {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    border: 1px solid var(--green);
+    /* background: url("../../assets/images/bg-gradient-img.png"); */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    border-radius: 2.5rem;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    /* overflow: hidden; */
+}
+.success-story .successStoryBody .successStoryContent::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:5%;
+    width: 5%;
+    background: var(--green);
+    z-index: -1;
+    filter: blur(5rem);
+    opacity: 0.2;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1.5s;
+  }
+  .success-story .successStoryBody .successStoryContent:hover::before{
+    height:100%;
+    width: 100%;
+
+  }
+
+.sscontentImage {
+    width: 50%;
+    position: sticky;
+    top: 10rem;
+    overflow: hidden;
+    height: fit-content;
+}
+
+.sscontentImage div {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: white;
+}
+
+.sscontentImage img {
+    height: auto;
+    max-height: 200px;
+    width: 100%;
+}
+
+.sscontent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sscontent a {
+    font-size: 2.2rem;
+    font-weight: 700;
+    display: none;
+}
+
+.p1 {
+    line-height: 3rem;
+}
+
+
+.ppp2 {
+    color: var(--green);
+}
+
+.p1>p {
+    transition: 0.5s;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+
+}
+
+.p1>.p3 {
+    transition: 0.5s;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.p1>p>span {
+    font-size: 20px;
+    letter-spacing: 0.2rem;
+    margin: 10rem 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--green);
+}
+
+.sscontent .p2 {
+    display: none;
+}
+
+@media only screen and (max-width:1366px) {
+
+    .success-story .SuccessStoryheader h2 {
+        font-size: 6rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+}
+
+@media only screen and (max-width:1200px) {
+    .success-story .SuccessStoryheader h2 {
+        font-size: 4.2rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+@media only screen and (max-width:991px) {
+
+    .mySwiper,
+    .success-story .SuccessStoryheader {
+        padding: 3rem 0;
+    }
+
+    .success-story .successStoryBody,
+    .success-story {
+        padding: 0;
+    }
+    .sscontentImage div,
+    .sscontent p,
+    .sscontentImage {
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .success-story .SuccessStoryheader p {
+        font-size: 1.6rem;
+    }
+
+    .success-story .SuccessStoryheader h2 {
+        font-size: 3.6rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+}
+
+@media only screen and (max-width:767px) {
+    .success-story .successStoryBody .successStoryContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sscontentImage {
+        position: relative;
+        top: 0;
+    }
+}
+
+/* box-shadow:inset  -1px -3px 10px 8px green; */

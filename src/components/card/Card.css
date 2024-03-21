@@ -1,0 +1,95 @@
+article.card {
+  position: relative;
+  border: 0.1rem solid var(--white);
+  border-radius: 2rem;
+  padding: 2rem;
+  padding-bottom: 5rem;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem
+}
+
+
+.approach article.card:nth-child(1)::before {
+  height: 30%;
+  width: 50%;
+}
+
+.approach article.card:nth-child(2)::before {
+  height: 40%;
+  width: 60%;
+}
+
+.approach article.card:nth-child(3)::before {
+  height: 50%;
+  width: 60%;
+}
+
+.approach article.card:nth-child(4)::before {
+  height: 50%;
+  width: 70%;
+}
+
+.approach article.card:nth-child(5)::before {
+  height: 60%;
+  width: 80%;
+}
+
+.approach article.card:nth-child(6)::before {
+  height: 65%;
+  width: 90%;
+}
+
+.approach article.card:hover::before {
+  height: 70%;
+  width: 90%;
+}
+
+article.card .text-green {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+article.card h5 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+article.card p {
+  font-weight: 200;
+}
+
+article.card .card-button {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-right: 3rem;
+}
+
+article.card .card-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 2rem;
+  background: url('../../assets/images/learn-more.png') no-repeat;
+}
+
+article.card:hover {
+  transform: translateY(-1rem);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 767px) {
+  article.card {
+    padding-bottom: 6rem;
+  }
+}

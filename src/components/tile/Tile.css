@@ -1,0 +1,60 @@
+.tile {
+  height: 17rem;
+  max-width: 18rem;
+  border-radius: 2rem;
+  padding: 2rem;
+  backdrop-filter: blur(1rem);
+  background: linear-gradient(#00ff003b, #ffffff20 95%);
+  position: relative;
+}
+.tile div{
+  height: 12rem;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile small {
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.tile p {
+  font-size: 10px;
+  text-align: right;
+  position: absolute;
+  bottom: -15px;
+  right: 5%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .tile {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .tile {
+    max-width: unset;
+  }
+  .tile div h2{
+    font-size: 4.2rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .tile div{
+    align-items: stretch;
+  }
+  
+  .tile div h2{
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .tile div{
+    align-items: center;
+  }
+}

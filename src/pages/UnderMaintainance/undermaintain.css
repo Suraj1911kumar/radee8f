@@ -1,0 +1,21 @@
+.undermaintain {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 1rem;
+}
+.undermaintain img{
+    width: 100%;
+    max-width: 600px;
+}
+.undermaintain a button{
+    cursor: pointer;
+    padding: 1rem 3rem;
+    font-size: 1.6rem;
+    background-color: var(--glass);
+    border: 2px solid;
+    border-radius: 2rem;
+    color: white;
+}

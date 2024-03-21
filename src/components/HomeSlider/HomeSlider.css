@@ -1,0 +1,81 @@
+.mySwiper {
+    width: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.cline{
+    width: 11rem;
+    height: 0.1875rem;
+    background-color:var(--green);
+    align-items: center;
+}
+
+.swiper-slide {
+    transition: 0.5s;
+    border-radius: 1rem;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--white) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--green) !important;
+}
+
+.swiper-slide-active {
+    filter: none;
+}
+
+.swiper-slide:hover {
+    filter: none;
+}
+
+.inner-testimonial-image {
+    overflow: hidden;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.inner-testimonial-image img {
+    width: 100%;
+    height: fit-content;
+}
+
+.ourhappyclient {
+    /* height:300px; */
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    padding: 25px;
+    background: url("../../assets/images/ellipse.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+@media screen and (max-width:767px) {
+    .ourhappyclient {
+        height: 100px !important;
+        /* height: 30vh; */
+    }
+
+    
+}
+@media screen and (max-width:567px) {
+    .containerFull {
+        padding: 0 1rem !important;
+    }
+
+    
+}

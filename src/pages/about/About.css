@@ -1,0 +1,376 @@
+.hero {
+  position: relative;
+  background: url('../../assets/images/circles.png') no-repeat;
+  background-size: 144rem;
+  background-position: 0 -10rem;
+  min-height: 100vh;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: -8rem;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/images/bg-gradient-img.png') no-repeat;
+  background-size: 40rem;
+}
+
+.text-anim {
+  position: relative;
+  padding: 8rem 2rem;
+  z-index: 2;
+  overflow: hidden;
+  text-align: center;
+}
+
+.text-anim .animation {
+  position: relative;
+  transition: 300ms all linear;
+}
+
+.text-anim h2 {
+  overflow: hidden;
+  font-size: 9rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.grid-4x2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 3rem;
+}
+
+.grid-4x2 .v-card {
+  position: relative;
+  border-radius: 1rem;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 100ms;
+  background: var(--black);
+  overflow: hidden;
+}
+
+.grid-4x2 .v-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background: var(--black);
+  opacity: 0.7;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-duration: 300ms;
+}
+
+.grid-4x2 .v-card:hover::before {
+  height: 100%;
+}
+
+.grid-4x2 .v-card:hover {
+  transform: scale(1.05);
+}
+
+.grid-4x2 .v-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.grid-4x2 .v-card .card-contents {
+  position: absolute;
+  top: 0;
+  font-size: 2rem;
+  height: 100%;
+  width: 100%;
+  padding: 4rem 2.2rem 2.2rem;
+}
+
+.grid-4x2 .v-card .card-contents p {
+  margin-bottom: 1.5rem;
+}
+
+.grid-4x2 .v-card .card-contents p.description {
+  transform: translateX(110%);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-duration: 50ms;
+}
+
+.grid-4x2 .v-card:hover .card-contents p.description {
+  transform: translateX(0);
+  font-size: 1.8rem;
+  font-weight: 300;
+
+}
+
+.grid-4x2 .v-card .card-contents a {
+  position: absolute;
+  bottom: 2.2rem;
+  right: 2.2rem;
+  border-bottom: 0.25rem solid transparent;
+  transform: translateY(5rem);
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  transition-duration: 500ms;
+}
+
+.grid-4x2 .v-card:hover .card-contents a {
+  transform: translateY(0);
+}
+
+.grid-4x2 .v-card .card-contents a:hover {
+  border-bottom: 0.25rem solid var(--green);
+}
+
+.journey {
+  padding: 10rem 0;
+  background: url('../../assets/images/ellipse.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 60%;
+  font-size: 2.4rem;
+}
+
+.journey p {
+  max-width: 80%;
+}
+
+.column-contents {
+  font-size: 2rem;
+  padding: 5rem 2.5rem 5rem 5rem;
+}
+
+.column-contents h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.column-contents p {
+  margin: 2rem 0;
+}
+
+.column-contents a {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.floating-cards-block {
+  padding: 8rem 0;
+}
+
+.floating-cards-block .floating-cards-stage {
+  /* min-height: 100vh; */
+  position: sticky;
+  top: 12rem;
+}
+
+.floating-cards-block .floating-cards-stage>div {
+  min-height: 25rem;
+  text-align: center;
+}
+
+.floating-cards-block .floating-cards-stage>div h2 {
+  max-width: 60%;
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 6.4rem;
+}
+
+.floating-cards-block .parallax-cards {
+  position: relative;
+  width: 47%;
+  margin-bottom: 7rem;
+  background: linear-gradient(#122000, #1E7209);
+  z-index: 2;
+}
+.spiderImage{
+  z-index: -5 !important;
+  position: absolute;
+  /* right: -11rem; */
+  right: -7rem;
+  opacity: 0.5;
+  bottom: -20rem;
+}
+#id::after {
+  content: '\A';
+  position: absolute;
+  background: var(--after);
+  top: 0; bottom: 0;
+  left: 0; 
+  z-index: -5;
+  width: 100%;
+  /* height: var(--height);
+  width: var(--width);  */
+}
+.floating-cards-block .parallax-cards.right{
+  background: linear-gradient(180deg, #2C3C18 0%, #1E7209 100%);
+}
+.floating-cards-block .parallax-cards.left{
+  background:linear-gradient(180deg, #30411E 0%, #1E7209 100%);;
+}
+.floating-cards-block .parallax-cards.right {
+  
+  margin-right: 0;
+  margin-left: auto;
+}
+.parallax-cards .card-body{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+}
+.parallax-cards .card-body b {
+  color: var(--green);
+}
+.parallax-cards .card-body p {
+  color: var(--white);
+}
+
+
+
+
+
+
+.floating-cards-block .parallax-cards .card-body {
+  color: var(--black);
+  min-height: 35rem;
+  height: 100%;
+  padding: 2rem 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.floating-cards-block .parallax-cards .card-body b {
+  font-size: 2rem;
+}
+
+.future .column.contents {
+  padding: 5rem 0;
+}
+
+.future .column.contents h3 {
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+.future img {
+  transition: 200ms all linear;
+  transform: translate(0);
+}
+
+@media only screen and (max-width: 1366px) {
+  .text-anim h2 {
+    font-size: 6rem;
+  }
+
+  .grid-4x2 .v-card .card-contents {
+    font-size: 1.6rem;
+  }
+
+  .floating-cards-block .floating-cards-stage>div h2 {
+    font-size: 5rem;
+  }
+
+  .journey {
+    font-size: 2rem;
+  }
+  .spiderImage{
+  z-index: -5 !important;
+  position: absolute;
+  right: -8rem;
+  opacity: 0.5;
+  bottom: -20rem;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .text-anim h2,
+  .floating-cards-block .floating-cards-stage>div h2 {
+    max-width: unset;
+    font-size: 4.2rem;
+  }
+    .journey {
+    font-size: 2rem;
+  }
+  .spiderImage{
+  z-index: -5 !important;
+  position: absolute;
+  right: -3rem;
+  opacity: 0.5;
+  bottom: -20rem;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+  .journey p {
+    font-size: 1.6rem;
+    max-width: unset;
+  }
+
+  .column-contents p {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+
+  .text-anim h2,
+  .floating-cards-block .floating-cards-stage>div h2 {
+    font-size: 3.6rem;
+  }
+  
+  .spiderImage{
+  z-index: -5 !important;
+  position: absolute;
+  right: -2rem;
+  opacity: 0.5;
+  bottom: -20rem;
+}
+}
+
+@media only screen and (max-width: 767px) {
+
+  .journey {
+    padding: 5rem 0;
+  }
+  .text-anim h2,
+  .floating-cards-block .floating-cards-stage>div h2 {
+    font-size: 3.2rem;
+  }
+
+  .floating-cards-block .parallax-cards {
+    width: 100%;
+  }
+
+  .floating-cards-block .parallax-cards .card-body {
+    padding: 2rem;
+  }
+
+  .column-contents {
+    padding: 2.5rem;
+  }
+
+  .future .column.contents {
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .text-anim {
+    padding: 5rem 2rem;
+  }
+
+  .text-anim h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .floating-cards-block .floating-cards-stage>div h2 {
+    font-size: 4.4rem;
+  }
+}
+

@@ -1,0 +1,98 @@
+
+/* R */
+
+.row.sectionR,.row.sectionA,.row.sectionD,.row.sectionE,.row.section8 {
+    height: 100vh;
+    background: url('../../assets/images/circleblock.png');
+    background-size: cover;    
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+.row.sectionR .textbox,.row.sectionA .textbox,.row.sectionD .textbox,.row.sectionE .textbox,.row.section8 .textbox {
+    border: 1px solid var(--Main-Stroke, rgba(255, 255, 255, 0.70));
+    background: var(--Main-Gradient, linear-gradient(113deg, rgba(255, 255, 255, 0.47) 0%, rgba(255, 255, 255, 0.00) 110.84%));
+    /* Main Blur Effect */
+    backdrop-filter: blur(21px);
+    position: relative;
+    top: 40%;
+    left: 30%;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    height: 300px;
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 2rem;
+    /* border: 2px solid red; */
+}
+.row.sectionR .letterPart {
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.row.sectionR .letterPart img,.row.sectionA .letterPart img,.row.sectionD .letterPart img,.row.sectionE .letterPart img,.row.section8 .letterPart img{
+    height: 500px;    
+}
+.row.sectionR .textbox h1,.row.sectionA .textbox h1,.row.sectionD .textbox h1,.row.sectionE .textbox h1,.row.section8 .textbox h1 {
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 6.5rem;
+    text-transform: uppercase;
+}
+
+/* A */
+.row{
+    margin: 0;
+}
+
+.row.sectionA .letterPart {
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+ 
+/* D */
+
+
+.row.sectionD .letterPart {
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+/* E */
+
+
+.row.sectionE .letterPart {
+    position: absolute;
+    left: 33%;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+/* 8 */
+
+.row.section8 .letterPart {
+    position: absolute;
+    left: 23%;
+    top: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}

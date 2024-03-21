@@ -1,0 +1,285 @@
+.service-section {
+    /* min-height: 100vh; */
+    width: 100%;
+    overflow: hidden;
+}
+
+.sectionHead {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+    background: url("../../assets/images/ellipse.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.sectionHead h1 {
+    font-size: 7rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sectionHead p {
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.serviceBody {
+    display: flex;
+    margin: 10rem 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* padding: 25px; */
+    gap: 5rem;
+    background: url("../../assets/images/bg-gradient-blue.png");
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    backdrop-filter: blur(5px);
+}
+
+.serviceBody>.column-60 {
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 25px;
+    min-height: 300px;
+    /* scale: 0.9;*/
+    transition: 3s;
+}
+
+.serviceBody>.column-60:hover {
+    scale: 1.05;
+}
+
+
+.exploreBtn {
+    position: relative;
+    padding: 5px 15px;
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--green);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+.show-on-mobile {
+    display: none;
+}
+
+.serviceBody img {
+    width: 100%;
+    border-radius: 25px;
+    transition: 0.9s;
+
+}
+
+.serviceBody img:hover {
+    transform: scale(1.1);
+}
+
+.serviceBody:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.serviceBody div h3 {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--green);
+}
+
+
+/* next section for read caption */
+
+
+.div a>img {
+    height: 24px;
+    width: 24px !important;
+}
+
+.closebtn {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 1.6rem;
+    align-items: left;
+    justify-content: center;
+    transition: all 300s;
+}
+
+
+.linkSpan a{
+    display: flex;
+    align-items: center;
+    /* flex-direction: row; */
+    gap: 0,1rem;
+    justify-content: start;
+    margin: 0.5rem;
+}
+.linkSpan a svg{
+    /* font-size: 2rem; */
+    font-weight: bolder;
+    padding-bottom: 0.4rem;
+}
+
+.linkSpan a:hover {
+    color: var(--green) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1366px) {
+
+    .sectionHead h1 {
+        font-size: 6rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+}
+
+@media only screen and (max-width:1200px) {
+    .sectionHead h1 {
+        font-size: 4.2rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+}
+
+@media only screen and (max-width:991px) {
+    .sectionHead h1 {
+        font-size: 3.6rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+}
+
+@media only screen and (max-width:767px) {
+    .serviceBody {
+        flex-direction: column;
+        margin: 6rem 0;
+
+    }
+
+    .serviceBody>.column-60 {
+
+        justify-content: flex-start;
+
+    }
+
+
+    .service-section {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .serviceBody:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .show-on-mobile {
+        display: block;
+        font-size: 2.8rem;
+        font-weight: 600;
+        color: var(--green);
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .sectionHead h1 {
+        font-size: 3.2rem;
+    }
+
+    .sectionHead p {
+        font-size: 1.6rem;
+    }
+
+    .sectionHead,
+    .serviceBody,
+    .serviceBody>.column-60 {
+        padding: 0;
+    }
+
+
+}
+
+
+
+.row.sectionR {
+    height: 100vh;
+    background: url('../../assets/images/circleblock.png');
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+}
+
+.row.sectionR .letterPart {
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.row.sectionR .letterPart img {
+    height: 600px;
+
+}
+
+.row.sectionR .textbox {
+    border: 1px solid var(--Main-Stroke, rgba(255, 255, 255, 0.70));
+    background: var(--Main-Gradient, linear-gradient(113deg, rgba(255, 255, 255, 0.47) 0%, rgba(255, 255, 255, 0.00) 110.84%));
+
+    /* Main Blur Effect */
+    backdrop-filter: blur(21px);
+    position: relative;
+    top: 35%;
+    left: 30%;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    height: 300px;
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 2rem;
+    /* border: 2px solid red; */
+}
+
+.row.sectionR .textbox h1 {
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 6.5rem;
+    text-transform: uppercase;
+}
